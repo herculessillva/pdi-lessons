@@ -6,7 +6,7 @@ image = cv2.imread('angio.tif',0)
 cv2.imshow('Original', image)
 
 # Apply average kernel
-kernel_avg = np.ones((3,3))
+kernel_avg = np.ones((25,25))
 kernel_avg = kernel_avg / kernel_avg.sum()
 cv2.imshow('kernel_avg', (255*kernel_avg/kernel_avg.max()).astype(np.uint8))
  
